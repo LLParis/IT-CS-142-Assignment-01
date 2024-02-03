@@ -18,7 +18,7 @@ public class AssignedAsciiArt {
         tower();
         upperDisc();
     }
-
+    // method to draw the needle of the Space Needle
     private static void needle() {
         // Loop to draw the needle part of the Space Needle
         for (int row = 0; row < SIZE; row++) {
@@ -29,7 +29,7 @@ public class AssignedAsciiArt {
             System.out.println();
         }
     }
-
+    // method to draw the upper disc of the Space Needle
     private static void upperDisc() {
         // loop to handle rows
         for (int row = 0; row < SIZE; row++) {
@@ -37,7 +37,7 @@ public class AssignedAsciiArt {
             for (int space = 0; space < 3 * SIZE - 3 * row - 3; space++) {
                 System.out.print(" ");
             }
-            System.out.print("__/"); // printing left side
+            System.out.print("__/"); // fencepost
             for (int colon = 0; colon < 3 * row; colon++) {
                 System.out.print(":"); // printing left center
             }
@@ -45,7 +45,7 @@ public class AssignedAsciiArt {
             for (int colon = 0; colon < 3 * row; colon++) {
                 System.out.print(":"); // printing right center
             }
-            System.out.println("\\__"); // printing right side
+            System.out.println("\\__"); // fencepost
         }
         // printing section divider / belt line
         System.out.print("|"); // fencepost
@@ -55,6 +55,7 @@ public class AssignedAsciiArt {
         System.out.println("|"); // fencepost
     }
 
+    // Method to draw lower disc of the Space Needle
     private static void lowerDisc() {
         // printing rows of lower disc based on size
         for (int row = 0; row < SIZE; row++) {
@@ -70,7 +71,7 @@ public class AssignedAsciiArt {
             System.out.println("_/"); // fencepost
         }
     }
-
+   // Method to draw tower part of the Space Needle
 private static void tower() {
         // Calculate the space necessary to keep tower aligned
     double spaceFactor;
